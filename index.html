@@ -81,13 +81,13 @@
     markerDBLOCK.bindPopup("<b>D-BLOCK</b><br>You are at D-Block.").openPopup();
 
 
-    if (!navigator.geolocation) {
-  console.log("Geolocation is not supported right now!");
-} else {
-  setInterval(() => {
-    navigator.geolocation.getCurrentPosition(getPosition)
-  }, 5000);
-}
+//     if (!navigator.geolocation) {
+//   console.log("Geolocation is not supported right now!");
+// } else {
+//   setInterval(() => {
+//     navigator.geolocation.getCurrentPosition(getPosition)
+//   }, 5000);
+// }
 var marker, circle;
 
 function getPosition(position){
@@ -111,16 +111,16 @@ function getPosition(position){
 
 
 //The pathway
-map.on('click', function (e) {
-			console.log(e)
-			var newMarker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
-      L.Routing.control({
-  waypoints: [
-    L.latLng(lat,long),
-    L.latLng(30.3530092, 76.3649750)
-  ]
-}).addTo(map);
-})
+// map.on('click', function (e) {
+// 			console.log(e)
+// 			var newMarker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
+//       L.Routing.control({
+//   waypoints: [
+//     L.latLng(lat,long),
+//     L.latLng(30.3530092, 76.3649750)
+//   ]
+// }).addTo(map);
+// })
 
 
 
