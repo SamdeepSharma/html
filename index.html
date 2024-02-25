@@ -111,17 +111,17 @@ function getPosition(position){
 
 
 //The pathway
- map.on('click', function (e) {
- 			console.log(e)
- 			var newMarker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
-       L.Routing.control({
+ //map.on('click', function (e) {
+ //			console.log(e)
+ 	//		var newMarker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
+       
+ //})
+ L.Routing.control({
    waypoints: [
      L.latLng(lat,long),
      L.latLng(30.3530092, 76.3649750)
    ]
  }).addTo(map);
- })
-
 
 
   </script>
